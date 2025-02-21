@@ -1,0 +1,19 @@
+Project constitutes of 4 modules:
+1. controller
+2.service
+3.exception
+4.dto
+
+1.controller package consist of controller class
+controller class is given @RestController annotstion, handles API requests and  the url mappings are provided for getting current currenct exchange rates and
+for currency type conversions.
+2.In service package we have CurrencyService class
+This service fetches exchange rates and performs currency conversion. we provide the api url here("https://api.exchangerate-api.com/v4/latest/")
+3.in exception package we have GlobalExceptionHandler to gracefully handle errrors
+4. Dto consist of three clases,
+CurrencyResponse: for providing exchange rates
+onvertRequest: to accept currency convertion request
+ConvertResponse: to provide the response to the conversion request
+
+Additionally we have Unit tests in CurrencyServiceTest.java 
+where we written several test cases to check for failures
